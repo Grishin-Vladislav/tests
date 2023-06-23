@@ -1,0 +1,26 @@
+[
+  {
+    "courses": ["Java", "Python", "HTML", "JavaScript"],
+    "durations": [23, 22, 21, 20],
+    "expected": {
+      "short_courses": [["JavaScript"], 20],
+      "long_courses": [["Java"], 23]
+    }
+  },
+  {
+    "courses": ["Java", "Python", "HTML", "JavaScript"],
+    "durations": [23, 23, 20, 20],
+    "expected": {
+      "short_courses": [["HTML", "JavaScript"], 20],
+      "long_courses": [["Java", "Python"], 23]
+    }
+  },
+  {
+    "courses": ["Java", "Python", "HTML", "JavaScript"],
+    "durations": [20, 20, 0, 20],
+    "expected": {
+      "short_courses": [["HTML"], 0],
+      "long_courses": [["Java", "Python", "JavaScript"], 20]
+    }
+  }
+]
